@@ -1,0 +1,72 @@
+.about-me-page {
+    .row {
+        flex-wrap: wrap;
+    }
+    .container {
+        padding: 0 !important;
+        padding-bottom : 30px !important;
+    }
+}
+.information {
+    margin-right: -15px;
+    .infomation-content {
+        ul {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            li {
+                padding: 6px 0;
+                line-break: anywhere;
+                span {
+                    font-size: $font-text;
+                }
+                .value {
+                    font-size: $font-select;
+                    color: $color-text;
+                }
+            }
+        }
+    }
+    @include mobile {
+        margin: 0;
+    }
+}
+
+.experience {
+    margin-left: 15px;
+    .experience-content {
+        h3 {
+            text-align: center;
+            font-size: $font-title;
+        }
+    }
+    @include mobile-flex {
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    @include mobile {
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.section-title {
+    span {
+        font-size: $font-title;
+        color: $color-text;
+    }
+}
+
+.section-box {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    @include mobile {
+        padding: 10px 10px;
+    };
+}

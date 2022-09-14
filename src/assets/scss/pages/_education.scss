@@ -1,0 +1,47 @@
+.education-page {
+    .section-box {
+        @include mobile {
+            margin: 0;
+        }
+    }
+    .list-edu {
+        padding: 30px 20px;
+        li {
+            position: relative;
+            padding: 0 30px;
+            p {
+                color: $color-text;
+                font-size: $font-select;
+            }
+            h4 {
+                font-size: $font-text;
+                line-height: 1.8rem;
+            }
+            span {
+                color: $color-text;
+                font-size: $font-select;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $color-white;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                bottom: 0;
+                background-color: $color-white;
+                top: 50%;
+                left: 3.5px;
+            }
+        }
+    }
+}

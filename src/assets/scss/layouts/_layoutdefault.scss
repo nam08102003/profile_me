@@ -1,0 +1,49 @@
+.site-body {
+    width: 90%;
+    max-height: 100%;
+    margin: auto auto;
+    margin-top: 50px;
+    // margin-bottom: 50px;
+    @include mobile-flex {
+        margin-top: 0;
+    }
+    @include mobile {
+        margin-top: 0;
+    }
+}
+
+.site-content {
+    background-color: $color-secondary;
+    border-radius: 1rem;
+    @include mobile-flex {
+        // border-radius: 1rem;
+        margin-top: 10px;
+    }
+    padding: 0;
+    .content-main {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 1rem;
+        @include mobile {
+            border-radius: 1rem;
+            // margin-top: 20px;
+        }
+        height: 100%;
+        height: auto;
+        .container {
+            padding: 20px 20px;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color-border;
+}
