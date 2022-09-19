@@ -4,6 +4,7 @@ export const ListInfo = [
   { title: "Gender", value: "Male" },
   { title: "From to", value: "Vĩnh Phúc" },
   { title: "Address", value: "Định Công Hoàng Mai Hà Nội" },
+  { title: "School", value: "Đại học Thủy Lợi" },
   { title: "Phone", value: "0372891736" },
   {
     title: "Facebook",
@@ -30,5 +31,32 @@ export const ListSkill = [
   {
     title: "Language & Technology",
     value: ["Html", "Css", "Sass", "Javascript", "ReactJs", "Git"],
+  },
+];
+
+export const ListProject = [
+  {
+    name: "Ametok Clone",
+    language: ["Html", "Css"],
+    overview: "Clone one page of website in Html, Css language.",
+    status: true,
+    linkGit: "https://github.com/nam08102003/blog",
+    linkWeb: "https://nam08102003.github.io/blog/",
+  },
+  {
+    name: "Repto Clone",
+    language: ["Html", "Css"],
+    overview: "Clone one page of service website in Html, Css language.",
+    status: true,
+    linkGit: "https://github.com/nam08102003/repto_clone",
+    linkWeb: "https://nam08102003.github.io/repto_clone/",
+  },
+  {
+    name: "BestChillTv",
+    language: ["Html", "Css", "Sass", "Javascript", "Reactjs"],
+    overview: "Clone website https://bichill.us/ in Reactjs language.",
+    status: true,
+    linkGit: "https://github.com/nam08102003/namchill",
+    linkWeb: "https://namchill.vercel.app/",
   },
 ];

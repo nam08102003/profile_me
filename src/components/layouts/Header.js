@@ -10,7 +10,6 @@ function Header() {
   const ChangeMobile = () => {
     setMobile(!mobile);
   };
-  console.log(mobile);
   return (
     <header className="header">
       <div className="container">
